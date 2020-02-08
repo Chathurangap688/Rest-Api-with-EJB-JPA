@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress JpaDomInspection -->
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="LEARN" transaction-type="JTA">
+        <jta-data-source>java:/jdbc/LEARN</jta-data-source>
+        <class>com.test.user.implimentations.UserBean</class>
+        <properties>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.proc.param_null_passing" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
